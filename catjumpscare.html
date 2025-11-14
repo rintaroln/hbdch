@@ -52,23 +52,5 @@
   <button class="button" onclick="window.location.href='final.html'">Go Back</button>
 </body>
 
-<audio id="music">
-  <source src="./music/jump-scare-sound-2-82831.mp3" type="audio/mp3" />
-</audio>
-
-<script>
-  const music = document.getElementById('music');
-
-  // Wait 1 second before playing
-  setTimeout(() => {
-    music.play().catch(e => {
-      console.log('Audio play failed:', e);
-    });
-  }, 2000);
-
-  // Ensure it only plays once
-  music.loop = false;
-</script>
-
 
 </html>
